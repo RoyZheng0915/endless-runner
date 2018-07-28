@@ -22,7 +22,7 @@ var canvas = document.getElementById("canvas"),
     score = 0,
     bestScore = 0,
     touches = [],
-    touchButtonSize = 50,
+    touchButtonSize = 70,
     touchButtonMargin = 20,
     upButton = {
         x: touchButtonMargin,
@@ -167,7 +167,7 @@ function update() {
     ctx.font = "14px sans-serif";
     ctx.fillStyle = "black";
     ctx.textAlign = 'center';
-    ctx.fillText("Score:" + Math.round(score / 100), width / 2, 20);
+    ctx.fillText("Score: " + Math.round(score / 100), width / 2, 20);
     ctx.fillText("Best: " + bestScore, width / 2, 40);
     //ctx.fillText(verticalSpeed, 10, 70);
     ctx.restore();
@@ -192,9 +192,9 @@ function update() {
         ctx.font = "18px sans-serif";
         ctx.fillText("Game Over", width / 2, 60);
         ctx.font = "14px sans-serif";
-        ctx.fillText("Score:" + Math.round(score / 100), width / 2, 90);
+        ctx.fillText("Score: " + Math.round(score / 100), width / 2, 90);
         ctx.fillText("Best: " + bestScore, width / 2, 110);
-        ctx.fillText("Press Space or touch screen to restart", width / 2, 140);
+        ctx.fillText("Press Space or touch the screen to restart", width / 2, 140);
         ctx.restore();
         window.setTimeout(requestAnimationFrame, 700, gameoverLoop);
     } else {
@@ -230,7 +230,7 @@ function mainMenuDraw() {
     ctx.font = "48px serif";
     ctx.fillText("Endless Runner", width / 2, height / 2);
     ctx.font = "12px sans-serif";
-    ctx.fillText("Press Space or touch screen to start", width / 2, height / 2 + 30);
+    ctx.fillText("Press Space or touch the screen to start", width / 2, height / 2 + 30);
     ctx.fillText("Controls:", width / 2, height / 2 + 50);
     ctx.fillText("Use W, A, D or arrows or space", width / 2, height / 2 + 70);
     ctx.fillText("to jump, go left and go right", width / 2, height / 2 + 90);
@@ -400,6 +400,7 @@ window.addEventListener('touchend', function (e) {
 });
 
 function resized() {
+    /*
     width = document.body.clientWidth;
     height = document.body.clientHeight;
 
@@ -411,8 +412,9 @@ function resized() {
 
     window.cancelAnimationFrame(requestID);
     resetGameState();
-    requestID = requestAnimationFrame(mainMenuDraw);
+    requestID = requestAnimationFrame(mainMenuDraw);*/
+    alert("Reload the page to correct game screen size");
 }
 
-window.addEventListener("orientationchange", resized);
+//window.addEventListener("orientationchange", resized);
 window.addEventListener("resize", resized);
