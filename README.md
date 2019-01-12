@@ -1,7 +1,8 @@
 # endless-runner
 
-A simple endless runner game writted in Javascript.  
-[PLAY](https://kilicbaran.github.io/endless-runner/endless-runner.html)
+A simple endless runner game writted in Javascript. [PLAY](https://kilicbaran.github.io/endless-runner/endless-runner.html)
+
+![Game Preview](https://raw.githubusercontent.com/kilicbaran/endless-runner/master/preview.gif)
 
 ## Controls
 
