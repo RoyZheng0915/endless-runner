@@ -1,12 +1,31 @@
-html, body, canvas{
-    margin:0;
-    padding:0;
-    border:0;
+html, body, canvas {
+    margin: 0;
+    padding: 0;
+    border: 0;
     user-select: none;
 }
 
-html, body{
+html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: #1e1e2f; /* 深蓝色背景 */
+}
+
+canvas {
+    background-color: #0d0d21; /* 深紫色背景 */
+    border: 2px solid #00ff99; /* 霓虹绿色边框 */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* 白色字体 */
+}
+
+a {
+    color: #ff007f; /* 霓虹粉色 */
+}
+
+h1, h2, h3 {
+    color: #00ffff; /* 霓虹青色 */
 }
